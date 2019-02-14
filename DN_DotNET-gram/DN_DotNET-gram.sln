@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DN_DotNET-gram", "DN_DotNET-gram\DN_DotNET-gram.csproj", "{81CA39BF-D924-4139-9093-8A7348BCAA59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet-gramTestSuite", "DotNet-gramTestSuite\DotNet-gramTestSuite.csproj", "{FF73B17A-AE6A-4D4F-9F68-F555734CFF33}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetgramTableTestSuite", "DotNet-gramTestSuite\DotNetgramTableTestSuite.csproj", "{FF73B17A-AE6A-4D4F-9F68-F555734CFF33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetGramServicesTestSuite", "DotNetGramServicesTestSuite\DotNetGramServicesTestSuite.csproj", "{E651C7F0-C8D6-451C-8190-94F717A51503}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{FF73B17A-AE6A-4D4F-9F68-F555734CFF33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF73B17A-AE6A-4D4F-9F68-F555734CFF33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF73B17A-AE6A-4D4F-9F68-F555734CFF33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E651C7F0-C8D6-451C-8190-94F717A51503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E651C7F0-C8D6-451C-8190-94F717A51503}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E651C7F0-C8D6-451C-8190-94F717A51503}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E651C7F0-C8D6-451C-8190-94F717A51503}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
