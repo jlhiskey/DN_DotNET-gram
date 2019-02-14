@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DN_DotNET-gram", "DN_DotNET-gram\DN_DotNET-gram.csproj", "{81CA39BF-D924-4139-9093-8A7348BCAA59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet-gramTestSuite", "DotNet-gramTestSuite\DotNet-gramTestSuite.csproj", "{FF73B17A-AE6A-4D4F-9F68-F555734CFF33}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81CA39BF-D924-4139-9093-8A7348BCAA59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81CA39BF-D924-4139-9093-8A7348BCAA59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81CA39BF-D924-4139-9093-8A7348BCAA59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81CA39BF-D924-4139-9093-8A7348BCAA59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF73B17A-AE6A-4D4F-9F68-F555734CFF33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF73B17A-AE6A-4D4F-9F68-F555734CFF33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF73B17A-AE6A-4D4F-9F68-F555734CFF33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF73B17A-AE6A-4D4F-9F68-F555734CFF33}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B46831CE-1994-4039-962A-B5810C70F142}
+	EndGlobalSection
+EndGlobal
