@@ -31,7 +31,7 @@ namespace DN_DotNET_gram
             services.AddMvc();
 
             services.AddDbContext<DotNetgramDBContext>(options =>
-            options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"])
+            options.UseSqlServer(Configuration["ConnectionStrings:ProductionConnection"])
             );
 
             services.AddScoped<IPostManager, PostManagementService>();           
