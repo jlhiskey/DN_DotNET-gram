@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DN_DotNET_gram.Data;
+using DN_DotNET_gram.Models.Interfaces;
+using DN_DotNET_gram.Models.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -32,7 +34,7 @@ namespace DN_DotNET_gram
             options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"])
             );
 
-            //services.AddScoped<IPostManager, PostManagementService>();           
+            services.AddScoped<IPostManager, PostManagementService>();           
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

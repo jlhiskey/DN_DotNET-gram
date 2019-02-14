@@ -15,11 +15,7 @@ namespace DN_DotNET_gram.Models
         /// Post Details
         /// </summary>
         public string Details { get; set; }
-        /// <summary>
-        /// Post Comments
-        /// </summary>
-        public string[] Comments { get; set; }
-
+        
         /// <summary>
         /// Image URL
         /// </summary>

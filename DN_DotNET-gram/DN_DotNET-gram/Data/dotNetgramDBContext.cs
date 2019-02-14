@@ -15,6 +15,6 @@ namespace DN_DotNET_gram.Data
             
         }
 
-        //public DbSet<{MODEL HERE> Modelhere { get; set; }
+        public DbSet<Post> Posts { get; set; }
     }
 }
