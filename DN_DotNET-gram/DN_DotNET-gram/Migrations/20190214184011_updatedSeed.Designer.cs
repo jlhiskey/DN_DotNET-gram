@@ -3,14 +3,16 @@ using DN_DotNET_gram.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DN_DotNET_gram.Migrations
 {
     [DbContext(typeof(DotNetgramDBContext))]
-    partial class DotNetgramDBContextModelSnapshot : ModelSnapshot
+    [Migration("20190214184011_updatedSeed")]
+    partial class updatedSeed
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

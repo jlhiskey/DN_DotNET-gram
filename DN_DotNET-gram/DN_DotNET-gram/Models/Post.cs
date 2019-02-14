@@ -11,6 +11,12 @@ namespace DN_DotNET_gram.Models
         /// Post ID
         /// </summary>
         public int ID { get; set; }
+
+        /// <summary>
+        /// Author of Post
+        /// </summary>
+        public string Name { get; set; }
+
         /// <summary>
         /// Post Details
         /// </summary>

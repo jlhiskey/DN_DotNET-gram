@@ -16,30 +16,35 @@ namespace DN_DotNET_gram.Data
                 new Post
                 {
                     ID = 1,
+                    Name = "Jason",
                     Details = "Squirrel's With Lightsabers",
                     URL = "https://via.placeholder.com/150"
                 },
                 new Post
                 {
                     ID = 2,
-                    Details = "Deathstar Sunrise",
+                    Name = "Jason",
+                    Details = "Bob Ross",
                     URL = "https://via.placeholder.com/150"
                 },
                 new Post
                 {
                     ID = 3,
+                    Name = "Jason",
                     Details = "Deathstar Sunrise",
                     URL = "https://via.placeholder.com/150"
                 },
                 new Post
                 {
                     ID = 4,
+                    Name = "Jason",
                     Details = "Volcano",
                     URL = "https://via.placeholder.com/150"
                 },
                 new Post
                 {
                     ID = 5,
+                    Name = "Jason",
                     Details = "Glacier",
                     URL = "https://via.placeholder.com/150"
                 }
