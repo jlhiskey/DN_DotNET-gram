@@ -1,3 +1,21 @@
 ﻿@page
+@using DN_DotNET_gram.Models.Interfaces
+@inject IPostManager PostManagementService
+@{
+    var posts = await PostManagementService.GetPosts();
 
-Hello world
+}
+@foreach (var post in posts)
+{
+<div>
+    <h3>@post.ID</h3>
+
+    <img src="@post.URL" alt="Post Image" height="100" style="margin:30px" />
+
+    <p>@post.Details</p>
+
+    <a asp-page="/Posts/Index" asp-route-id="@post.ID">@post.ID</a>
+</div>
+    
+}
+<h3><a asp-page="/Posts/Manage">Add New Post</a></h3>

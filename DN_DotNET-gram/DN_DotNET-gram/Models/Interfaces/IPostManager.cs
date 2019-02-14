@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace DN_DotNET_gram.Models.Interfaces
 {
-    interface IPostManager
+    public interface IPostManager
     {
         /// <summary>
         /// Delete post using post.ID as search criteria.
