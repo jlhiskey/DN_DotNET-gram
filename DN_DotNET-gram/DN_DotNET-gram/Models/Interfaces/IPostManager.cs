@@ -25,7 +25,7 @@ namespace DN_DotNET_gram.Models.Interfaces
         /// Returns a list containing all existing Posts.
         /// </summary>
         /// <returns>List<Post></Post></returns>
-        Task<List<Post>> GetPosts();
+        Task<IEnumerable<Post>> GetPosts();
 
         /// <summary>
         /// Either creates or updates a post.

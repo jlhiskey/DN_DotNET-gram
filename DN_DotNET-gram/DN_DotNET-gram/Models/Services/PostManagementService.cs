@@ -51,7 +51,7 @@ namespace DN_DotNET_gram.Models.Services
         /// Returns a list containing all existing Posts.
         /// </summary>
         /// <returns>List<Post></returns>
-        public async Task<List<Post>> GetPosts()
+        public async Task<IEnumerable<Post>> GetPosts()
         {
             return await _context.Posts.ToListAsync();
         }
