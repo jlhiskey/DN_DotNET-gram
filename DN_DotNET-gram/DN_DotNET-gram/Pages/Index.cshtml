@@ -10,11 +10,11 @@
 <div>
     <h3>@post.ID</h3>
 
-    <img src="@post.URL" alt="Post Image" height="100" style="margin:30px" />
+    <img src="@post.URL" alt="Post Image" height="150" style="margin:30px" />
 
     <p>@post.Details</p>
 
-    <a asp-page="/Posts/Index" asp-route-id="@post.ID">@post.ID</a>
+    <a asp-page="/Posts/Index" asp-route-id="@post.ID">Manage Post</a>
 </div>
     
 }

@@ -1,4 +1,17 @@
-﻿@page
+﻿@page "{id}"
 @model DN_DotNET_gram.Pages.Posts.IndexModel
-@{
-}
+
+<div>
+    <label asp-for="post.ID"></label>
+    <label asp-for="post.ID">@Model.post.ID</label>
+</div>
+<div>
+    <label asp-for="post.URL"></label>
+    <label asp-for="post.URL">@Model.post.URL</label>
+    <img src="@Model.post.URL" alt="Post Image" height="150" style="margin:30px" />
+</div>
+<div>
+    <label asp-for="post.Details"></label>
+    <label asp-for="post.Details">@Model.post.Details</label>
+</div>
+<a asp-page="/Posts/Manage" asp-route-id="@Model.post.ID">Edit Post</a>
