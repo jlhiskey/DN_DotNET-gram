@@ -4,12 +4,12 @@
     ViewData["Title"] = "Manage";
 }
 <h1>Manage Post</h1>
-<form method="post">
+<form method="post" enctype="multipart/form-data">
     <label asp-for="Post.Name"></label>
     <input asp-for="Post.Name" />
 
-    <label asp-for="Post.URL"></label>
-    <input asp-for="Post.URL" />
+    <label asp-for="Image"></label>
+    <input asp-for="Image" type="file"/>
 
     <label asp-for="Post.Details"></label>
     <textarea rows="5" asp-for="Post.Details"></textarea>
