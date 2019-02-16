@@ -1,0 +1,44 @@
+﻿@page "{id?}"
+@model DN_DotNET_gram.Pages.Posts.ManageModel
+@{
+    ViewData["Title"] = "Manage";
+}
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+<h3><a class="btn bg-light shadow p-3 col text-center" asp-page="/Index"><img src="~/assets/dotnetgramlogo.png" alt="Dot net gram logo" height="100" style="margin-bottom: -2rem; margin-top: -1rem" /></a></h3>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+<div class="card bg-light mb-3 shadow p-3" style="max-width: 40rem; margin: 1rem auto">
+    <h1 style="margin: 1rem auto">Manage Post</h1>
+    <div class="card-body">
+        <form method="post" enctype="multipart/form-data">
+            <h5 class="card-header">
+                <label asp-for="Post.Name">User Name</label>
+                <input asp-for="Post.Name" />
+            </h5>
+
+            <img class="card-img shadow p-3" src="@Model.Post.URL" alt="@Model.Post.Details" style="padding: 1rem; margin-bottom: 1rem;">
+
+            <label asp-for="Image">Choose Image</label>
+            <input asp-for="Image" type="file" />
+
+            <p class="card-text" style="margin-top: 1rem">
+                <label asp-for="Post.Details"></label>
+                <textarea rows="10" cols="65" asp-for="Post.Details"></textarea>
+            </p>
+
+
+            <button class="btn btn-dark shadow p-3" type="submit">Save Post</button>
+            <button class="btn btn-dark shadow p-3" type="submit" asp-page-handler="Delete">Delete Post</button>
+        </form>
+    </div>
+</div>
