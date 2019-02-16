@@ -50,14 +50,39 @@ Any additional important information…
 
 Test each method within your services data layer.
 
+## Application Introduction
 
-   
-## Resources
+This application is designed to mimic some of Instagram's capabilities. A user can create, view and edit posts. When a post is created or edited the user has the option of uploading an image. The image is uploaded to Azure Blob and the image is then rendered on the site using a reference to its location in the Blob.
+  
+## Technologies Used
 
+- Azure
+  - Deployment
+  - Blob Storage
+- Bootstrap
+  - Styling
+- MVC
+  - Razor Pages
+
+## Architectual Design
+
+- Single class schema
+  - Post
+    - ID
+    - Name
+    - Details
+    - URL
 
 ## Example Usage
 ### On Page Load
 
+![index](./assets/Homepage1.PNG)
+![index](./assets/Homepage2.PNG)     
 
-![index](assets/index.PNG)    
+### View Post is Pressed
 
+![index](./assets/ViewPost.PNG)  
+
+### Edit Post is Pressed
+
+![index](./assets/EditPost.PNG)  

@@ -1,15 +1,28 @@
 ﻿@page "{id}"
 @model DN_DotNET_gram.Pages.Posts.IndexModel
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
-<div>
-    <label asp-for="Post.Name"></label>
-    <label asp-for="Post.Name">@Model.Post.Name</label>
+<h3><a class="btn bg-light shadow p-3 col text-center" asp-page="/Index"><img src="~/assets/dotnetgramlogo.png" alt="Dot net gram logo" height="100" style="margin-bottom: -2rem; margin-top: -1rem" /></a></h3>
+
+<div class="card bg-light mb-3 shadow p-3" style="max-width: 40rem; margin: 1rem auto">
+    <div class="card-body">
+        <h5 class="card-header">
+            <label asp-for="Post.Name">@Model.Post.Name</label>
+        </h5>
+
+        <img class="card-img shadow p-3" src="@Model.Post.URL" alt="@Model.Post.Details" style="padding: 1rem">
+
+
+        <p class="card-text" style="margin-top: 1rem">
+            <label asp-for="Post.Details">@Model.Post.Details</label>
+        </p>
+
+
+        <a class="btn btn-dark shadow p-3" asp-page="/Posts/Manage" asp-route-id="@Model.Post.ID" style="margin-top: 1rem">Edit Post</a>
+    </div>
 </div>
-<div>
-    <img src="@Model.Post.URL" alt="Post Image"  style="margin:30px" />
-</div>
-<div>
-    <label asp-for="Post.Details"></label>
-    <label asp-for="Post.Details">@Model.Post.Details</label>
-</div>
-<a asp-page="/Posts/Manage" asp-route-id="@Model.Post.ID">Edit Post</a>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
