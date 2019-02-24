@@ -5,13 +5,22 @@ namespace DN_DotNET_gram.Data
 {
     public class DotNetgramDBContext : DbContext
     {
+        /// <summary>
+        /// Enables new database
+        /// </summary>
+        /// <param name="options"></param>
         public DotNetgramDBContext(DbContextOptions<DotNetgramDBContext> options) : base(options)
         {
 
         }
 
+        /// <summary>
+        /// Migration data
+        /// </summary>
+        /// <param name="modelBuilder"></param>
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            // Seed data
             modelBuilder.Entity<Post>().HasData(
                 new Post
                 {
@@ -51,6 +60,9 @@ namespace DN_DotNET_gram.Data
                 );
         }
 
+        /// <summary>
+        /// Adds Post class to database.
+        /// </summary>
         public DbSet<Post> Posts { get; set; }
     }
 }

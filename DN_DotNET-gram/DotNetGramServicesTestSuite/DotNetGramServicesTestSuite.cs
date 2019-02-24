@@ -84,7 +84,7 @@ namespace DotNetGramServicesTestSuite
         [Fact]
         public async void CanFindAllPosts()
         {
-            DbContextOptions<DotNetgramDBContext> options = new DbContextOptionsBuilder<DotNetgramDBContext>().UseInMemoryDatabase("FindPost").Options;
+            DbContextOptions<DotNetgramDBContext> options = new DbContextOptionsBuilder<DotNetgramDBContext>().UseInMemoryDatabase("FindPosts").Options;
 
             using (DotNetgramDBContext context = new DotNetgramDBContext(options))
             {
@@ -109,7 +109,7 @@ namespace DotNetGramServicesTestSuite
         [Fact]
         public async void CanDeletePost()
         {
-            DbContextOptions<DotNetgramDBContext> options = new DbContextOptionsBuilder<DotNetgramDBContext>().UseInMemoryDatabase("UpdatePost").Options;
+            DbContextOptions<DotNetgramDBContext> options = new DbContextOptionsBuilder<DotNetgramDBContext>().UseInMemoryDatabase("DeletePost").Options;
 
             using (DotNetgramDBContext context = new DotNetgramDBContext(options))
             {
